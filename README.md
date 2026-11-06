@@ -18,7 +18,6 @@ tudo no navegador, sem cadastro e sem backend.
 - Salvamento automático do rascunho no `localStorage` (nada é enviado para
   nenhum servidor).
 - Validação dos campos obrigatórios com mensagens em português.
-- Pronto para publicar no GitHub Pages (workflow incluso).
 
 ## Como rodar no VS Code
 
