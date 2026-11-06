@@ -6,6 +6,16 @@ tudo no navegador, sem cadastro e sem backend.
 
 > Este é um esboço inicial (v0.1). A base já está pronta para evoluir.
 
+🔗 **Site no ar:** https://raphaelbento.github.io/Curriculo_facil/
+
+[![Site no ar](https://img.shields.io/badge/site-no%20ar-2563eb?style=flat-square)](https://raphaelbento.github.io/Curriculo_facil/)
+
+<p align="center">
+  <a href="https://raphaelbento.github.io/Curriculo_facil/">
+    <img src="docs/preview.png" alt="Interface do Currículo Fácil: formulário à esquerda e prévia do currículo em A4 à direita" width="860">
+  </a>
+</p>
+
 ## Funcionalidades
 
 - Formulário com dados pessoais, escolaridade, último e penúltimo emprego,
@@ -55,6 +65,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 Curriculo_facil/
 ├─ .github/workflows/deploy.yml   # deploy automático no GitHub Pages
+├─ docs/preview.png               # captura de tela usada neste README
 ├─ public/favicon.svg
 ├─ src/
 │  ├─ App.vue                     # layout da página + ações (gerar/limpar)
@@ -89,26 +100,32 @@ esperadas.
 
 ## Publicar no GitHub Pages
 
-1. Crie o repositório no GitHub (ex.: `Curriculo_facil`) e envie o código:
+O site está publicado em **https://raphaelbento.github.io/Curriculo_facil/**.
 
-   ```bash
-   git init
-   git add .
-   git commit -m "esboço inicial do Currículo Fácil"
-   git branch -M main
-   git remote add origin https://github.com/SEU-USUARIO/Curriculo_facil.git
-   git push -u origin main
-   ```
+O deploy é automático: o workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+roda o build (`npm ci` + `npm run build`) e publica a pasta `dist` a cada `push`
+na branch `main`. Para disparar manualmente, abra **Actions → Deploy no GitHub Pages
+→ Run workflow**.
 
-2. No GitHub, abra **Settings → Pages** e em **Build and deployment** escolha
-   **Source: GitHub Actions**.
+Configuração já aplicada no repositório:
 
-3. O workflow `.github/workflows/deploy.yml` roda a cada `push` na `main` e
-   publica em `https://SEU-USUARIO.github.io/Curriculo_facil/`.
+- **Settings → Pages → Build and deployment → Source: GitHub Actions**;
+- permissões `pages: write` e `id-token: write` declaradas no workflow.
 
 O `vite.config.js` já usa `base: './'`, então o site funciona tanto em
 repositório de projeto (`/Curriculo_facil/`) quanto em domínio próprio, sem
 ajustes.
+
+### Como atualizar o site
+
+```bash
+git add .
+git commit -m "minha alteração"
+git push
+```
+
+Em 1–2 minutos a nova versão estará no ar. Acompanhe em
+[Actions](https://github.com/RaphaelBento/Curriculo_facil/actions).
 
 ## Próximos passos sugeridos
 
