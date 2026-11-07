@@ -127,11 +127,4 @@ git push
 Em 1–2 minutos a nova versão estará no ar. Acompanhe em
 [Actions](https://github.com/RaphaelBento/Curriculo_facil/actions).
 
-## Próximos passos sugeridos
 
-- Foto de perfil opcional no currículo.
-- Lista ilimitada de empregos (hoje são dois, como no escopo inicial).
-- Modelos alternativos de currículo (clássico, moderno, minimalista).
-- Exportar também em `.docx`.
-- Testes automatizados da validação e do PDF.
-- PWA para funcionar offline depois do primeiro acesso.
