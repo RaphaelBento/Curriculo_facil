@@ -98,33 +98,11 @@ A prévia em HTML (`ResumeSheet.vue`) segue a mesma hierarquia visual do PDF, ma
 não é uma cópia pixel a pixel — pequenas diferenças de quebra de linha são
 esperadas.
 
-## Publicar no GitHub Pages
 
-O site está publicado em **https://raphaelbento.github.io/Curriculo_facil/**.
 
-O deploy é automático: o workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
-roda o build (`npm ci` + `npm run build`) e publica a pasta `dist` a cada `push`
-na branch `main`. Para disparar manualmente, abra **Actions → Deploy no GitHub Pages
-→ Run workflow**.
 
-Configuração já aplicada no repositório:
 
-- **Settings → Pages → Build and deployment → Source: GitHub Actions**;
-- permissões `pages: write` e `id-token: write` declaradas no workflow.
 
-O `vite.config.js` já usa `base: './'`, então o site funciona tanto em
-repositório de projeto (`/Curriculo_facil/`) quanto em domínio próprio, sem
-ajustes.
 
-### Como atualizar o site
-
-```bash
-git add .
-git commit -m "minha alteração"
-git push
-```
-
-Em 1–2 minutos a nova versão estará no ar. Acompanhe em
-[Actions](https://github.com/RaphaelBento/Curriculo_facil/actions).
 
 
