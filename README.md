@@ -4,17 +4,7 @@ Gerador de currículo em PDF feito com **Vue 3 + Vite**. O usuário preenche um
 formulário simples, acompanha a prévia em tempo real (folha A4) e baixa o PDF —
 tudo no navegador, sem cadastro e sem backend.
 
-> Este é um esboço inicial (v0.1). A base já está pronta para evoluir.
 
-🔗 **Site no ar:** https://raphaelbento.github.io/Curriculo_facil/
-
-[![Site no ar](https://img.shields.io/badge/site-no%20ar-2563eb?style=flat-square)](https://raphaelbento.github.io/Curriculo_facil/)
-
-<p align="center">
-  <a href="https://raphaelbento.github.io/Curriculo_facil/">
-    <img src="docs/preview.png" alt="Interface do Currículo Fácil: formulário à esquerda e prévia do currículo em A4 à direita" width="860">
-  </a>
-</p>
 
 ## Funcionalidades
 
